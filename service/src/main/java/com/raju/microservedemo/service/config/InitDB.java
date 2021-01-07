@@ -44,7 +44,7 @@ public class InitDB implements CommandLineRunner {
                 Stream.of(a1, a2).collect(Collectors.toSet()));
 
         User u2 = new User(null, "raju",
-                this.passwordEncoder.encode("adrajumin"),
+                this.passwordEncoder.encode("raju"),
                 "Mr.",
                 "raju",
                 "raju@raju.com",

@@ -11,7 +11,7 @@ import javax.validation.constraints.Size;
 @Setter
 @Builder
 @ToString
-public class LoginDto {
+public class LoginRequestDto {
 
     @NotNull
     @Size(min = 2,max = 50)

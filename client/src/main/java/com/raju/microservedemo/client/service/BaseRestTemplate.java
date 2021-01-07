@@ -18,19 +18,19 @@ public class BaseRestTemplate {
 
 
     @Value("${service.protocol}")
-    private static String PROTOCOL;
+    private  String PROTOCOL;
 
     @Value("${service.host}")
-    public static String HOST;
+    public  String HOST;
 
-    @Value("${server.port}")
-    public static String PORT;
+    @Value("${service.port}")
+    public  String PORT;
 
     @Value("${service.context-path}")
-    public static String PATH;
+    public  String PATH;
 
     @Getter
-    public static String SERVICE_URL = "";
+    public  String SERVICE_URL = "";
 
     @PostConstruct
     void init() {
